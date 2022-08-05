@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Calculator</title>
+	<link rel='stylesheet' href='/css/calculator.css'>
+	<script defer src='/js/calculator.js'></script>
+</head>
+<body>
+    입력값1 : <input type="text" id="v1"> <br/>
+    입력값2 : <input type="text" id="v2"> <br/>
+    연산자 &nbsp;: <input type="text" id="operator"> <br/>
+    <button onclick="calculator()">계산</button> &nbsp;&nbsp;
+
+
+    <div class="row">
+        <input class="result" disabled id="result-input">
+    </div>
+    <div id ="btns" class="row">
+        <div class="btn num" data-value="7" onclick="inputNum(7);">7</div>
+        <div class="btn num" data-value="8" onclick="inputNum(8);">8</div>
+        <div class="btn num" data-value="9" onclick="inputNum(9);">9</div>
+        <div class="btn operator" data-value="/" onclick="inputOperator('/')">/</div>
+    </div>
+    <div class="row">
+        <div class="btn num" data-value="4" onclick="inputNum(4);">4</div>
+        <div class="btn num" data-value="5" onclick="inputNum(5);">5</div>
+        <div class="btn num" data-value="6" onclick="inputNum(6);">6</div>
+        <div class="btn operator" data-value="*" onclick="input">*</div>
+    </div>
+    <div class="row"> 
+        <div class="btn num" data-value="1" onclick="inputNum(1);">1</div>
+        <div class="btn num" data-value="2" onclick="inputNum(2);">2</div>
+        <div class="btn num" data-value="3" onclick="inputNum(3);">3</div>
+        <div class="btn operator" data-value="-" onclick="input();">-</div>
+    </div>
+    <div class="row">
+        <div class="btn reset" data-value="C">C</div>
+        <div class="btn num" data-value="0">0</div>
+        <div class="btn operator" data-value="=">=</div>
+        <div class="btn op" data-value="+">+</div>
+    </div>
+</body>
+</html>
